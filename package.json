@@ -1,0 +1,9 @@
+{
+  "name": "malf-operation-armure",
+  "version": "1.0.0",
+  "description": "Site web premium pour l'activité de coaching sportif MALF Operation Armure",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Site statique prêt pour Vercel'"
+  }
+}
