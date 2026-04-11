@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | MALF Operation Armure</title>
+    <meta name="description" content="Prendre contact avec MALF Operation Armure pour un accompagnement coaching sportif." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">MALF Operation Armure</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">Menu</button>
+        <nav class="site-nav">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">Contact</p>
+          <h1>Parlons de ton objectif et de la meilleure structure pour l'atteindre.</h1>
+          <p>
+            Un premier échange permet d'évaluer la situation actuelle, le niveau d'engagement et le cadre le plus
+            adapté pour avancer sérieusement.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-panel">
+            <h2>Prendre contact</h2>
+            <p>Réponse claire, cadrée et orientée action.</p>
+            <ul class="contact-list">
+              <li>Email : contact@malf-operation-armure.com</li>
+              <li>Disponibilité : sur rendez-vous</li>
+              <li>Format : échange initial de qualification</li>
+            </ul>
+          </div>
+          <form class="contact-form" name="contact" method="post">
+            <label>
+              Nom
+              <input type="text" name="name" placeholder="Votre nom" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Votre email" required />
+            </label>
+            <label>
+              Objectif
+              <input type="text" name="goal" placeholder="Votre objectif principal" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="6" placeholder="Décrivez votre besoin" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>MALF Operation Armure</p>
+        <div class="footer-links">
+          <a href="about.html">À propos</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
