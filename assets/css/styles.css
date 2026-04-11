@@ -27,9 +27,31 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(199, 163, 106, 0.18), transparent 35%),
-    linear-gradient(180deg, #0a0f15 0%, #0d1117 45%, #0b1015 100%);
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.16) 0 1px, transparent 2px),
+    radial-gradient(circle at 80% 18%, rgba(255, 255, 255, 0.1) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 35% 45%, rgba(255, 255, 255, 0.1) 0 1px, transparent 2px),
+    radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.12) 0 1.5px, transparent 2.5px),
+    radial-gradient(circle at 55% 78%, rgba(255, 255, 255, 0.08) 0 1px, transparent 2px),
+    radial-gradient(circle at top, rgba(199, 163, 106, 0.14), transparent 28%),
+    radial-gradient(ellipse at center, #12121a 0%, #080810 100%);
+  background-attachment: fixed;
   line-height: 1.6;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.85) 0.7px, transparent 0.8px),
+    radial-gradient(rgba(192, 192, 200, 0.5) 1px, transparent 1.2px),
+    radial-gradient(rgba(255, 255, 255, 0.35) 1.4px, transparent 1.7px);
+  background-size: 140px 140px, 220px 220px, 320px 320px;
+  background-position: 0 0, 40px 60px, 100px 20px;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 img {
@@ -70,8 +92,19 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 28px rgba(255, 255, 255, 0.14);
 }
 
 .site-nav {
@@ -228,6 +261,21 @@ h3 {
 .hero-card {
   display: grid;
   gap: 1rem;
+}
+
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background:
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent 56%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+}
+
+.hero-logo {
+  width: min(100%, 360px);
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.45));
 }
 
 .panel,
